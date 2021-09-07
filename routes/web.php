@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard/index');
 });
+
+Route::get('/inventory', function () {
+    return view('master-data/inventory/index');
+});
+
+Route::get('/service', function () {
+    return view('master-data/service/index');
+});
